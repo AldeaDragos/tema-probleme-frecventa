@@ -201,7 +201,7 @@ void sumaPrime(int A[], int dim) {
 
 	for (int i = 0; i < dim; i++) {
 		for (int j = i + 1; j < dim; j++) {
-			if (suma == (A[i] + A[j]) && nrPrim(suma)) {
+			if ((A[i] + A[j])==suma && nrPrim(suma)) {
 				count++;
 			}
 		}
