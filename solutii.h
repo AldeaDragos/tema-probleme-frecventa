@@ -172,3 +172,14 @@ void sol10() {
 
 }
 
+//Se dă un șir a1, a2, …, an format din n numere naturale. Determinați numărul de perechi de elemente din șir (ai,aj) cu i < j, care au suma număr prim.
+
+void sol11() {
+
+	int date[200] = { 2,5,9 };
+	
+	int dim = 3;
+
+	sumaPrime(date, dim);
+
+}

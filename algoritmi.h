@@ -194,3 +194,18 @@ bool nrPrim(int numar) {
 	}
 	return true;
 }
+
+void sumaPrime(int A[], int dim) {
+	int count = 0;
+	int suma = 0;
+
+	for (int i = 0; i < dim; i++) {
+		for (int j = i + 1; j < dim; j++) {
+			if (suma == (A[i] + A[j]) && nrPrim(suma)) {
+				count++;
+			}
+		}
+	}
+
+	cout << "Numarul de perechi de elemente din sir (ai,aj) cu i<j care au suma numar prime este: " << count << endl;
+}
