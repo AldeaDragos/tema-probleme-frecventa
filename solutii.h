@@ -133,24 +133,20 @@ void sol8() {
 //Să se afișeze numerele prime de la 1 la n.
 void sol9() {
 
+	int n;
+	cout << "Introduceti un numar natural: ";
+	cin >> n;
 
-	void sol19() {
+	int f[100] = {};
 
-		int n;
-		cout << "Introduceti un numar natural: ";
-		cin >> n;
-
-		int f[100] = {};
-
-		for (int i = 0; i < 100; i++) {
-			if (i <= n && f[i] == 0 && nrPrim(i)) {
-				cout << i << endl;
-			}
+	for (int i = 0; i < 100; i++) {
+		if (i <= n && f[i] == 0 && nrPrim(i)) {
+			cout << i << endl;
 		}
-
 	}
 
 }
+
 
 //Se citesc numere naturale cuprinse între 1 și 30.000.000 până la întâlnirea numărului 0. Să se afișeze valoarea duplicat.
 
